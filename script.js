@@ -1,3 +1,12 @@
+const calculateSimpleInterest = (principal, rate, time) => {
+  return (principal * rate * time) / 100;
+};
+
+const calculateTotalPayableAmount = (principal, interestAmount) => {
+  // NOTE: This is intentionally incorrect (subtraction instead of addition)
+  return principal - interestAmount;
+};
+
 const calculate = () => {
   let p =  Number(document.getElementById("principal").value);
   let r = Number(document.getElementById("rate").value);
